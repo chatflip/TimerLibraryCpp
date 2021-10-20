@@ -72,12 +72,16 @@
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <LinkIncremental>false</LinkIncremental>
+    <OutDir>$(SolutionDir)\TimerLibrary\lib\dynamic\$(Platform)</OutDir>
+    <TargetName>timer_library</TargetName>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <LinkIncremental>true</LinkIncremental>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <LinkIncremental>true</LinkIncremental>
+    <OutDir>$(SolutionDir)\TimerLibrary\lib\dynamic\$(Platform)</OutDir>
+    <TargetName>timer_library_d</TargetName>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <LinkIncremental>false</LinkIncremental>
@@ -103,7 +107,7 @@
       <EnableUAC>false</EnableUAC>
     </Link>
     <PostBuildEvent>
-      <Command>xcopy /y /d ".\..\bin\Release\DynamicTimer.dll" "$(OutDir)"</Command>
+      <Command>xcopy /Y /D /E "$(SolutionDir)TimerLibrary\lib\dynamic\$(Platform)\timer_library.dll" "$(SolutionDir)TimerLibrary\bin\dynamic\$(Platform)\"</Command>
     </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
@@ -139,7 +143,7 @@
       <EnableUAC>false</EnableUAC>
     </Link>
     <PostBuildEvent>
-      <Command>xcopy /y /d ".\..\bin\Debug\DynamicTimer.dll" "$(OutDir)"</Command>
+      <Command>xcopy /Y /D /E "$(SolutionDir)TimerLibrary\lib\dynamic\$(Platform)\timer_library_d.dll" "$(SolutionDir)TimerLibrary\bin\dynamic\$(Platform)\"</Command>
     </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
