@@ -7,6 +7,10 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "StaticTimer", "StaticTimer\
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "StaticTimerTest", "StaticTimerTest\StaticTimerTest.vcxproj", "{07544993-CA76-4DF7-85ED-C3E402EF04B5}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "DynamicTimer", "DynamicTimer\DynamicTimer.vcxproj", "{68380259-6638-4734-BCD0-DD7C9D87F117}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "DynamicTimerTest", "DynamicTimerTest\DynamicTimerTest.vcxproj", "{DC6589EE-CFEB-47B3-A48D-0AAB6C768894}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -21,6 +25,14 @@ Global
 		{07544993-CA76-4DF7-85ED-C3E402EF04B5}.Debug|x64.Build.0 = Debug|x64
 		{07544993-CA76-4DF7-85ED-C3E402EF04B5}.Release|x64.ActiveCfg = Release|x64
 		{07544993-CA76-4DF7-85ED-C3E402EF04B5}.Release|x64.Build.0 = Release|x64
+		{68380259-6638-4734-BCD0-DD7C9D87F117}.Debug|x64.ActiveCfg = Debug|x64
+		{68380259-6638-4734-BCD0-DD7C9D87F117}.Debug|x64.Build.0 = Debug|x64
+		{68380259-6638-4734-BCD0-DD7C9D87F117}.Release|x64.ActiveCfg = Release|x64
+		{68380259-6638-4734-BCD0-DD7C9D87F117}.Release|x64.Build.0 = Release|x64
+		{DC6589EE-CFEB-47B3-A48D-0AAB6C768894}.Debug|x64.ActiveCfg = Debug|x64
+		{DC6589EE-CFEB-47B3-A48D-0AAB6C768894}.Debug|x64.Build.0 = Debug|x64
+		{DC6589EE-CFEB-47B3-A48D-0AAB6C768894}.Release|x64.ActiveCfg = Release|x64
+		{DC6589EE-CFEB-47B3-A48D-0AAB6C768894}.Release|x64.Build.0 = Release|x64
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
